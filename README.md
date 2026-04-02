@@ -8,7 +8,7 @@
 - Demonstrate DoS traffic with `hping3` and capture it using Wireshark  
 - Mitigate the attack using pfSense firewall rules and analyze the resulting logs  
 
-## 🌐 Topology & IP Plan
+## Topology & IP Plan
 
 | Device / Segment              | VirtualBox Adapter | Interface | IP / Subnet                          | Role                              |
 |------------------------------|--------------------|-----------|--------------------------------------|-----------------------------------|
@@ -19,9 +19,9 @@
 | pfSense LAN                  | Internal (`LabNet`)| vtnet1   | 192.168.1.1/24 (DHCP: .100–.199)     | Default GW & DHCP/DNS relay       |
 | Ubuntu Desktop (Victim)      | Internal (`LabNet`)| eth0     | 192.168.1.100/24                     | Victim workload                   |
 
-## 🧱 pfSense VM Setup (VMWare)
+##  pfSense VM Setup (VMWare)
 
-### ⚙️ Virtual Machine Configuration
+###  Virtual Machine Configuration
 
 | Setting        | Value                          |
 |----------------|--------------------------------|
@@ -30,14 +30,14 @@
 | CPU / RAM      | 2 vCPU / 2 GB RAM              |
 | Disk           | 20 GB VDI (Dynamically Allocated) |
 
-### 🌐 Network Configuration
+###  Network Configuration
 
 | Adapter   | Mode              | Purpose                     |
 |----------|------------------|-----------------------------|
 | Adapter 1 | Bridged Adapter  | Connect to physical network (WAN) |
 | Adapter 2 | Internal Network (`LabNet`) | Isolated LAN segment |
 
-### 📀 Installation Setup
+###  Installation Setup
 
 - Attach the **pfSense ISO**:
   - Go to **Settings → Storage**
@@ -47,7 +47,7 @@
 
 ## ⚙️ pfSense Configuration
 
-### 🔧 Initial Setup
+###  Initial Setup
 
 - Install pfSense (accept default options)
 - From the console menu:
@@ -61,9 +61,9 @@
 
 ---
 
-## 🌐 5.1 Accessing pfSense from WAN
+##  5.1 Accessing pfSense from WAN
 
-> ⚠️ Temporary step for lab/demo purposes only
+>  Temporary step for lab/demo purposes only
 
 ### Disable pfSense Firewall (temporary)
 ```bash
