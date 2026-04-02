@@ -45,7 +45,7 @@
 
 - Start the VM to begin installation
 
-## ⚙️ pfSense Configuration
+##  pfSense Configuration
 
 ###  Initial Setup
 
